@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #CEECF5;
+}
+
+.menu-principal {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.texto-principal {
+    font-size: 24px; /* Tamanho de letra maior */
+    margin: 0; /* Remova margens padrão */
+    text-align: center; /* Centralize o texto */
+}
+.contact-us{
+    padding: 10px;
+    color: #fff;
+}
+.botao_login {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.espacamento{
+    background: linear-gradient(to bottom, #333, #CEECF5);
+    width: 100%;
+    height: 800px; /* Ajuste a altura conforme necessário */
+    padding: 25px;
+      
+}
+
+.section{
+    margin: 0;
+    padding: 0;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider{
+    width: 1300px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 700px;
+    display: flex;
+
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 1300px;
+    height: 700px;
+}
+.nav-m{
+    position: absolute;
+    width: 1300px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: yellow;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+
+.nav-auto{
+    position: absolute;
+    width: 1300px;
+    margin-top: 660px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: yellow;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: yellow;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: yellow;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: yellow;
+}
+  
+  

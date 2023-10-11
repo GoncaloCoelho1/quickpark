@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu-principal">
+        <div name="logo-esquerda">
+            <img src="logoParque2.png" alt="">
+        </div>
+
+        <p class="texto-principal">QuickPark</p>
+
+        <div name="menu-direita">
+            <a class="contact-us" href="url">Contacte-nos</a>
+            <a href=''><button class="botao_login">Entrar</button></a>
+        </div>
+    </header>
+    <div class="espacamento">
+        <section class="section">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="st first">
+                        <img src="esboco.jpeg" alt="">
+                    </div>
+
+                    <div class="st">
+                        <img src="montanha.jpg" alt="">
+                    </div>
+
+                    <div class="st">
+                        <img src="flores.jpg" alt="">
+                    </div>
+
+                    <div class="st">
+                        <img src="carros.jpg" alt="">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                    </div>
+                </div>
+
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked=true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    },5000);
+    </script>
+
+</body>
+</html
